@@ -6,13 +6,13 @@ np.seterr(all="raise")
 class base_ff:
     """
     Base fitness function class from which all fitness functions inherit.
-    
+
     This is an abstract class which exists just to be subclassed; it should not
     be instantiated.
     """
 
     # Default default fitness function is NaN.
-    default_fitness = np.NaN
+    default_fitness = np.nan
 
     # Default fitness objective is to minimise fitness.
     maximise = False
@@ -22,7 +22,7 @@ class base_ff:
 
     def __call__(self, ind, **kwargs):
         """
-        
+
 
         :param ind: An individual to be evaluated.
         :return: The fitness of the evaluated individual.
@@ -58,7 +58,7 @@ class base_ff:
         implementing a new fitness function, merely over-write this function
         in your own fitness function. All fitness functions must inherit from
         the base fitness function class.
-        
+
         :param ind: An individual to be evaluated.
         :param kwargs: Optional extra arguments.
         :return: The fitness of the evaluated individual.

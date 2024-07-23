@@ -24,7 +24,7 @@ plt.rc('font', family='Times New Roman')
 def help_message():
     """
     Prints a help message to explain the usage of this file.
-    
+
     :return: Nothing
     """
 
@@ -51,7 +51,7 @@ def parse_opts(command_line_args):
     """
     Parses command line arguments and returns usable variables which are used
     as inputs for other functions in this file.
-    
+
     :param command_line_args: flags passed in from the command line at
     execution
     :return: experiment_name: the name of the containing folder of results,
@@ -108,11 +108,11 @@ def parse_stats_from_runs(experiment_name):
         .               .               .   .   .   .
         run0_gen(n-1)   run1_gen(n-1)   .   .   .   run(n-1)_gen(n-1)
         run0_gen(n)     run1_gen(n)     .   .   .   run(n-1)_gen(n)
-        
+
     Generated file is compatible with
-        
+
         utilities.save_plot.save_average_plot_across_runs()
-    
+
     :param experiment_name: The name of a collecting folder within the
     ./results folder which holds multiple runs.
     :param graph: A boolean flag for whether or not to save figure.
