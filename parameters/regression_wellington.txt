@@ -2,8 +2,8 @@ CACHE:                  True
 CODON_SIZE:             100000
 CROSSOVER:              variable_onepoint
 CROSSOVER_PROBABILITY:  0.75
-DATASET_TRAIN:          China-Train.txt
-DATASET_TEST:           China-Test.txt
+DATASET_TRAIN:          China-Train.csv
+DATASET_TEST:           China-Test.csv
 DEBUG:                  False
 ERROR_METRIC:           mse
 GENERATIONS:            5000
