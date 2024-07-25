@@ -6,7 +6,8 @@ DATASET_TRAIN:          China-Train.csv
 DATASET_TEST:           China-Test.csv
 DEBUG:                  False
 ERROR_METRIC:           mse
-GENERATIONS:            5000
+GENERATIONS:            50
+POPULATION_SIZE:        5000
 MAX_GENOME_LENGTH:      500
 GRAMMAR_FILE:           supervised_learning/ChinaWellington.bnf
 INITIALISATION:         PI_grow
